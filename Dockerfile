@@ -1,5 +1,6 @@
-FROM nginx
+# gettind base image ubuntu
+FROM ubuntu
 
-COPY script.sh /script.sh 
+RUN apt-get update
 
-CMD ["/script.sh"]
+CMD ["echo","Hello World...! from my first docker image"]
