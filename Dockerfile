@@ -1,6 +1,5 @@
-# gettind base image ubuntu
-FROM ubuntu
+FROM alpine
 
-RUN apt-get update
+COPY script.sh /script.sh
 
-CMD ["echo","Hello World...! from my first docker image"]
+CMD /script.sh
